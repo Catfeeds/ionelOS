@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "用户登录"; ObjectID = "0nt-LO-tGo"; */
+"0nt-LO-tGo.text" = "用户登录";
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "BEm-7r-2CE"; */
+"BEm-7r-2CE.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "忘记密码？"; ObjectID = "ECD-CP-BMI"; */
+"ECD-CP-BMI.normalTitle" = "Forgot password?";
+
+/* Class = "UITextField"; placeholder = "手机号"; ObjectID = "UFc-yF-4Al"; */
+"UFc-yF-4Al.placeholder" = "Cell-phone number";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "Vgh-3f-rqG"; */
+"Vgh-3f-rqG.normalTitle" = "No account?";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "jaO-Wp-1QH"; */
+"jaO-Wp-1QH.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "没有账号请"; ObjectID = "lpj-G0-4Re"; */
+"lpj-G0-4Re.text" = "No account please";

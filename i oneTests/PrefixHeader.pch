@@ -1,0 +1,105 @@
+//
+//  PrefixHeader.pch
+//  i one
+//
+//  Created by zlt on 16/7/20.
+//  Copyright © 2016年 lkl. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "AFNetworking.h"
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#import "SVProgressHUD.h"
+#define rePassword @"https://app.imerit.cn/tp/index.php/user/resetPass?"
+#define getVerifyCodeURL @"https://app.imerit.cn/tp/index.php/user/get_verify_code?"
+#define registeURL @"https://app.imerit.cn/tp/index.php/user/register?"
+
+#define loginURL @"https://app.imerit.cn/tp/index.php/user/login?"
+
+//#define bindURL @"http://192.168.1.233:8000/tp/index.php/Bind/bind?"
+#define bindURL @"https://app.imerit.cn/tp/index.php/Bind/bind?"
+
+#define nickURL @"https://app.imerit.cn/tp/index.php/user/usernick?"
+#define locationURL @"https://app.imerit.cn/tp/index.php/Location/Location?"
+#define historyURL @"https://app.imerit.cn/tp/index.php/Location/history_fast?"
+#define getBondsURL @"https://app.imerit.cn/tp/index.php/bind/GetBonds?"
+
+#define unBindURL @"https://app.imerit.cn/tp/index.php/Bind/unbind?"
+#define configURL @"https://app.imerit.cn/tp/index.php/Location/getconf?"
+#define getinfoURL @"https://app.imerit.cn/tp/index.php/device/device_get_info?"
+#define userDefaults [NSUserDefaults standardUserDefaults]
+
+#define listenURL @"https://app.imerit.cn/tp/index.php/voice/passivecall?"
+
+#define nameURL @"https://app.imerit.cn/tp/index.php/Device/device_set_info?"
+
+#define timeURL @"https://app.imerit.cn/tp/index.php/device/device_config?"
+
+#define getFineURL @"https://app.imerit.cn/tp/index.php/fence/fence_get_list?"
+
+#define updateFine @"https://app.imerit.cn/tp/index.php/fence/fence_update?"
+#define addFineURL @"https://app.imerit.cn/tp/index.php/fence/fence_add?"
+
+#define delFineURL @"https://app.imerit.cn/tp/index.php/fence/fence_del?"
+
+#define RelJpushURL @"https://app.imerit.cn/tp/index.php/bind/rel_jpush?"
+
+#define GetDevicePBURL @"https://app.imerit.cn/tp/index.php/pb/GetDevicePB?"
+
+
+#define SetDevicePBURl @"https://app.imerit.cn/tp/index.php/pb/SetDevicePB?"
+
+#define postVoiceURL @"https://app.imerit.cn/tp/index.php/voice/PostVoice?"
+
+#define newsURL @"https://app.imerit.cn/tp/index.php/event/pullevents?"
+
+
+#define deleteURL @"https://app.imerit.cn/tp/index.php/event/dealevents?"
+
+#define getVoiceURL @"https://app.imerit.cn/tp/index.php/voice/getVoice?"
+
+#define postURL @"https://app.imerit.cn/tp/index.php/upload/upload?"
+#define AppLanguage @"appLanguage"
+
+#define addDeviceURL @"https://app.imerit.cn/tp/index.php/device/addDevicend?"
+#define  deleteDeviceURL @"https://app.imerit.cn/tp/index.php/device/delDevicend?"
+#define  setDeviceURL  @"https://app.imerit.cn/tp/index.php/device/setdevicend?"
+#define GetDeviceNoDisturbURl @"https://app.imerit.cn/tp/index.php/device/getdevicend?"
+
+#define Localized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Languge"]
+
+
+
+#define BindReqURL @"https://app.imerit.cn/tp/index.php/bind/bindreq?"
+
+#define BindRspURl @"https://app.imerit.cn/tp/index.php/bind/bindRsp?"
+
+#define getBondeUsers @"https://app.imerit.cn/tp/index.php/bind/getbondedusers?"
+#define bindMaster @"https://app.imerit.cn/tp/index.php/bind/bindmaster?"
+
+
+#define convertCoordinate @"https://app.imerit.cn/tp/index.php/convert/convert?"
+
+#define getActicle   @"https://app.imerit.cn/tp/index.php/user/userArticle?"
+#define getUserFriend @"https://app.imerit.cn/tp/index.php/user/userFriends?"
+#define seekdeviceURL @"https://app.imerit.cn/tp/index.php/device/seekdevice?"
+#define shutdownURL @"https://app.imerit.cn/tp/index.php/device/shutdown?"
+#define  addcolockURL @"https://app.imerit.cn/tp/index.php/device/clockAdd?"
+#define listClockURL @"https://app.imerit.cn/tp/index.php/device/clockList?"
+#define delclockURL @"https://app.imerit.cn/tp/index.php/device/clockDel?"
+#define clockEditURL @"https://app.imerit.cn/tp/index.php/device/clockEdit?"
+
+//手机屏幕高度
+#define HEIGHT_5 568.0
+#define HEIGHT_4 480.0
+#define HEIGHT_6P 736.0
+#define HEIGHT_6 667.0
+//https://app.imerit.cn
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* PrefixHeader_pch */

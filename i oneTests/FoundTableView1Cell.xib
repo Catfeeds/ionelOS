@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="FoundTableView1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5vk-eG-RWh">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="88"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5vk-eG-RWh" secondAttribute="trailing" id="1x6-xS-DLS"/>
+                    <constraint firstAttribute="bottom" secondItem="5vk-eG-RWh" secondAttribute="bottom" id="2BK-zR-SBr"/>
+                    <constraint firstItem="5vk-eG-RWh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="R8f-Ta-Kib"/>
+                    <constraint firstItem="5vk-eG-RWh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lkp-2S-7ND"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="5vk-eG-RWh" id="zna-cP-2lQ"/>
+            </connections>
+            <point key="canvasLocation" x="-18" y="-8"/>
+        </tableViewCell>
+    </objects>
+</document>

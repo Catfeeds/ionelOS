@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="InfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKZ-yW-H6y">
+                        <rect key="frame" x="16" y="-1" width="150" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="e5I-19-L42"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzt-rY-5ql">
+                        <rect key="frame" x="166" y="0.0" width="116" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wzt-rY-5ql" secondAttribute="bottom" id="9Bz-tm-InD"/>
+                    <constraint firstItem="wzt-rY-5ql" firstAttribute="leading" secondItem="CKZ-yW-H6y" secondAttribute="trailing" id="G05-0s-jeJ"/>
+                    <constraint firstItem="wzt-rY-5ql" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HXt-dB-7Se"/>
+                    <constraint firstItem="CKZ-yW-H6y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="OST-b2-yac"/>
+                    <constraint firstItem="CKZ-yW-H6y" firstAttribute="firstBaseline" secondItem="wzt-rY-5ql" secondAttribute="firstBaseline" id="POP-2W-p28"/>
+                    <constraint firstAttribute="trailing" secondItem="wzt-rY-5ql" secondAttribute="trailing" constant="5" id="nGb-gA-nZc"/>
+                    <constraint firstItem="CKZ-yW-H6y" firstAttribute="baseline" secondItem="wzt-rY-5ql" secondAttribute="baseline" id="rsm-1L-eTN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="wzt-rY-5ql" id="6wY-Fn-LJD"/>
+                <outlet property="titleLabel" destination="CKZ-yW-H6y" id="rAV-90-l8M"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="153"/>
+        </tableViewCell>
+    </objects>
+</document>

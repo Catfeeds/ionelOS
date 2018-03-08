@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RePassWorldViewController">
+            <connections>
+                <outlet property="codeButton" destination="Vjo-KX-ha1" id="fUD-Ha-RQs"/>
+                <outlet property="phoneLabel" destination="LDf-3x-ijv" id="GHG-Pl-eai"/>
+                <outlet property="phoneText" destination="tWm-oN-evP" id="D34-wB-j86"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRv-0v-gca">
+                    <rect key="frame" x="81" y="79" width="229" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="pfn-kk-h5F"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.65673575129999995" green="0.65673575129999995" blue="0.65673575129999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWm-oN-evP">
+                    <rect key="frame" x="90" y="84" width="210" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eKe-lh-she"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bXT-ZJ-PPN"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDf-3x-ijv">
+                    <rect key="frame" x="10" y="84" width="52" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ENp-xI-k4I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjo-KX-ha1">
+                    <rect key="frame" x="10" y="214" width="300" height="40"/>
+                    <color key="backgroundColor" red="0.46798430099999999" green="0.98484383890000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="I1w-fG-gPr"/>
+                    </constraints>
+                    <state key="normal" title="获取验证码">
+                        <color key="titleColor" red="0.17904590109999999" green="0.76128435660000005" blue="0.39724634669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="codeButtonTapped:" destination="-1" eventType="touchUpInside" id="1sb-HA-yir"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vjo-KX-ha1" secondAttribute="trailing" constant="10" id="2O4-vY-GEZ"/>
+                <constraint firstItem="LDf-3x-ijv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="9Jq-93-7ye"/>
+                <constraint firstAttribute="trailing" secondItem="jRv-0v-gca" secondAttribute="trailing" constant="10" id="G9m-su-O3S"/>
+                <constraint firstItem="tWm-oN-evP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="KbC-5F-PJP"/>
+                <constraint firstItem="jRv-0v-gca" firstAttribute="leading" secondItem="LDf-3x-ijv" secondAttribute="trailing" constant="19" id="Lqt-Xz-fuW"/>
+                <constraint firstItem="tWm-oN-evP" firstAttribute="leading" secondItem="LDf-3x-ijv" secondAttribute="trailing" constant="28" id="VzO-EC-sLi"/>
+                <constraint firstItem="jRv-0v-gca" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="Wrb-RI-34s"/>
+                <constraint firstItem="LDf-3x-ijv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="cIY-i1-fTI"/>
+                <constraint firstItem="Vjo-KX-ha1" firstAttribute="top" secondItem="jRv-0v-gca" secondAttribute="bottom" constant="95" id="jUc-1t-CmB"/>
+                <constraint firstAttribute="trailing" secondItem="tWm-oN-evP" secondAttribute="trailing" constant="20" id="my6-EZ-A0U"/>
+                <constraint firstItem="Vjo-KX-ha1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="r74-LM-Twq"/>
+            </constraints>
+            <point key="canvasLocation" x="61" y="-19"/>
+        </view>
+    </objects>
+</document>

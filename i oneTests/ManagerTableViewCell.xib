@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="ManagerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="frT-di-uxf">
+                        <rect key="frame" x="10" y="10" width="76.5" height="76.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="frT-di-uxf" secondAttribute="height" id="07c-FU-fVI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwu-hh-Tha">
+                        <rect key="frame" x="96.5" y="10" width="228.5" height="76.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="frT-di-uxf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1ja-Ka-fV1"/>
+                    <constraint firstItem="gwu-hh-Tha" firstAttribute="height" secondItem="frT-di-uxf" secondAttribute="height" id="OO2-n1-aTO"/>
+                    <constraint firstItem="gwu-hh-Tha" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PAe-nv-ase"/>
+                    <constraint firstAttribute="bottom" secondItem="frT-di-uxf" secondAttribute="bottom" constant="10" id="SXM-Hc-smG"/>
+                    <constraint firstItem="gwu-hh-Tha" firstAttribute="leading" secondItem="frT-di-uxf" secondAttribute="trailing" constant="10" id="ZfR-dW-ACF"/>
+                    <constraint firstItem="frT-di-uxf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="r2K-UF-rfb"/>
+                    <constraint firstAttribute="trailing" secondItem="gwu-hh-Tha" secondAttribute="trailing" id="uoD-m0-AqX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="frT-di-uxf" id="Fer-OM-8Uj"/>
+                <outlet property="label" destination="gwu-hh-Tha" id="uXQ-ZS-OgG"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="89.5"/>
+        </tableViewCell>
+    </objects>
+</document>

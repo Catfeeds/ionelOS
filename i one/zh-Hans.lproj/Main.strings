@@ -1,0 +1,21 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "GSn-Gx-ABK"; */
+"GSn-Gx-ABK.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "资讯"; ObjectID = "Mhp-2P-1MR"; */
+"Mhp-2P-1MR.title" = "消息";
+
+/* Class = "UINavigationItem"; title = "我的"; ObjectID = "N32-pm-28A"; */
+"N32-pm-28A.title" = "我的";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Ovt-ue-jk4"; */
+"Ovt-ue-jk4.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "S9K-Ig-UyU"; */
+"S9K-Ig-UyU.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "发现"; ObjectID = "mYQ-U9-lDh"; */
+"mYQ-U9-lDh.title" = "发现";
+
+/* Class = "UINavigationItem"; title = "爱随行"; ObjectID = "wIO-Nc-VeP"; */
+"wIO-Nc-VeP.title" = "首页";

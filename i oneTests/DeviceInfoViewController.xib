@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="tha-XQ-7y2" id="BNF-vM-aES"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tha-XQ-7y2">
+                    <rect key="frame" x="0.0" y="215" width="375" height="452"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5VB-yf-jdc"/>
+                        <outlet property="delegate" destination="-1" id="opj-df-PtJ"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-i6-1T4">
+                    <rect key="frame" x="0.0" y="64" width="375" height="151"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-Ef-DQ9">
+                            <rect key="frame" x="122" y="10" width="131" height="131"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ae4-Ef-DQ9" secondAttribute="height" multiplier="1:1" id="bbn-pr-xHp"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ae4-Ef-DQ9" firstAttribute="centerY" secondItem="tcg-i6-1T4" secondAttribute="centerY" id="GSw-32-DYa"/>
+                        <constraint firstAttribute="bottom" secondItem="Ae4-Ef-DQ9" secondAttribute="bottom" constant="10" id="IQm-c6-3Pu"/>
+                        <constraint firstItem="Ae4-Ef-DQ9" firstAttribute="top" secondItem="tcg-i6-1T4" secondAttribute="top" constant="10" id="gGf-3y-dok"/>
+                        <constraint firstItem="Ae4-Ef-DQ9" firstAttribute="centerX" secondItem="tcg-i6-1T4" secondAttribute="centerX" id="sxd-go-PlV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tcg-i6-1T4" secondAttribute="trailing" id="0Yk-2f-Cai"/>
+                <constraint firstAttribute="trailing" secondItem="tha-XQ-7y2" secondAttribute="trailing" id="IXa-1N-agr"/>
+                <constraint firstItem="tha-XQ-7y2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kda-FH-77N"/>
+                <constraint firstItem="tha-XQ-7y2" firstAttribute="top" secondItem="tcg-i6-1T4" secondAttribute="bottom" id="TJk-2P-mSw"/>
+                <constraint firstItem="tha-XQ-7y2" firstAttribute="height" secondItem="tcg-i6-1T4" secondAttribute="height" multiplier="3:1" id="X7e-XX-sG0"/>
+                <constraint firstAttribute="bottom" secondItem="tha-XQ-7y2" secondAttribute="bottom" id="adM-nz-fZU"/>
+                <constraint firstItem="tcg-i6-1T4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="bzU-cQ-hHF"/>
+                <constraint firstItem="tcg-i6-1T4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fdm-u8-WKU"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="头像" width="70" height="70"/>
+    </resources>
+</document>
